@@ -1,5 +1,5 @@
 # Segway-ROS2-driver-libsegwayrmp-based
-ROS2 Segway Drivers for BWIBots V2. It's derived from <code>libsegwayrmp</code> (https://github.com/utexas-bwi/libsegwayrmp.git)
+ROS2 Segway Drivers for BWIBots V2. This package is derived from <code>segway_rmp</code> (https://github.com/utexas-bwi/segway_rmp.git)
 
 ## Dependencies
 ### serial
