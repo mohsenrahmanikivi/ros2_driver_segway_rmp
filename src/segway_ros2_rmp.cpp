@@ -671,13 +671,8 @@ void handleStatusWrapper(segwayrmp::SegwayStatus::Ptr ss) {
 
 int main(int argc, char **argv) {
     rclcpp::init(argc, argv);  // Initialize the ROS2 system
-
-    // Create a shared pointer for the node
     auto segway_node = std::make_shared<SegwayRMPNode>();
-
-    // Call the run() method (sping is within run)
-    segway_node->run();  // Assuming run() is a public method of SegwayRMPNode
-
+    segway_node->run();
     rclcpp::shutdown();  // Shutdown the ROS2 system
     return 0; 
 }
