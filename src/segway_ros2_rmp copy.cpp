@@ -327,16 +327,11 @@ public:
         this->odom_msg.header.stamp = current_time;
         this->odom_msg.pose.pose.position.x = this->odometry_x;
         this->odom_msg.pose.pose.position.y = this->odometry_y;
-        // this->odom_msg.pose.pose.orientation = quat;
-        this->odom_msg.pose.pose.orientation.x = quat.x;
-        this->odom_msg.pose.pose.orientation.y = quat.y;
-        this->odom_msg.pose.pose.orientation.z = quat.z;
-        this->odom_msg.pose.pose.orientation.w = quat.z;        
+        this->odom_msg.pose.pose.orientation = quat;
         
         this->odom_msg.twist.twist.linear.x = vel_x;
         this->odom_msg.twist.twist.linear.y = vel_y;
         this->odom_msg.twist.twist.angular.z = yaw_rate;
-        // this->odom_msg.twist.twist.angular.w = this->odometry_w;
 
         this->odom_pub->publish(this->odom_msg);
     }
@@ -708,8 +703,13 @@ void handleStatusWrapper(segwayrmp::SegwayStatus::Ptr ss) {
 
 int main(int argc, char **argv) {
     rclcpp::init(argc, argv);  // Initialize the ROS2 system
+
+    // Create a shared pointer for the node
     auto segway_node = std::make_shared<SegwayRMPNode>();
-    segway_node->run();
+
+    // Call the run() method (sping is within run)
+    segway_node->run();  // Assuming run() is a public method of SegwayRMPNode
+
     rclcpp::shutdown();  // Shutdown the ROS2 system
     return 0; 
 }
