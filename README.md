@@ -13,12 +13,14 @@ ROS2 Segway Drivers for BWIBots V2. This package is derived from <code>segway_rm
 
 ### build
 - <code>ros2_ws/colcon build</code>
-- in case of " internal compiler error: Segmentation fault 477 | enable current_exception( T const & x )" <code>  sudo apt-get install build-essential software-properties-common -y
-   sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y 
-   sudo apt-get update
-   sudo apt-get install gcc-snapshot -y
+- in case of " internal compiler error: Segmentation fault 477 | enable current_exception( T const & x )"
+<code> How I resolved my g++ segmentation fault issue
+sudo apt-get install build-essential software-properties-common -y
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y 
+sudo apt-get update
+sudo apt-get install gcc-snapshot -y
   </code>
-  refrence https://stackoverflow.com/questions/44286265/g-internal-compiler-error-segmentation-fault-program-cc1plus-where-do-i
+  reference https://stackoverflow.com/questions/44286265/g-internal-compiler-error-segmentation-fault-program-cc1plus-where-do-i
 
 ## Launch
 - <code>ros2 launch segway_rmp_ros2 segway_rmp_ros2.launch.py</code>
