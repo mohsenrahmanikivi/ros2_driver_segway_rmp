@@ -4,8 +4,9 @@ ROS2 Segway Drivers for BWIBots V2. This package is derived from <code>segway_rm
 ## Dependencies
 ### serial
 - put the serial folder from the following repo in parallel to your colcon workspace
+-  <code>cd [ROS_WS]/src</code>
 - <code>git clone https://github.com/mohsenrahmanikivi/serial_for_ros2.git</code>
-
+- enter to the folder then follow the instruction to build serial library.
 ### libsegwayrmp-ros2
 - <code>cd [ROS_WS]/src</code>
 - <code>git clone https://github.com/mohsenrahmanikivi/libsegwayrmp_ros2.git</code>
