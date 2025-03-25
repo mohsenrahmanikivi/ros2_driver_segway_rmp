@@ -18,7 +18,7 @@
 using namespace std::chrono_literals;  // For defining time durations in seconds/milliseconds easily
 
 // update rate of handle status callback
-constexpr std::chrono::milliseconds updateInterval(50); // 100 seems to be solving trajectory problem
+constexpr std::chrono::milliseconds updateInterval(30); // 100 seems to be solving trajectory problem
 
 class SegwayRMPNode;
 
@@ -331,7 +331,7 @@ public:
         this->odom_msg.pose.pose.orientation.x = quat.x;
         this->odom_msg.pose.pose.orientation.y = quat.y;
         this->odom_msg.pose.pose.orientation.z = quat.z;
-        this->odom_msg.pose.pose.orientation.w = quat.z;        
+        this->odom_msg.pose.pose.orientation.w = quat.w;        
         
         this->odom_msg.twist.twist.linear.x = vel_x;
         this->odom_msg.twist.twist.linear.y = vel_y;

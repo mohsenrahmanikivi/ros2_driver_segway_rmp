@@ -61,7 +61,7 @@ public:
         this->initial_integrated_turn_position = 0.0;
         this->count = 0;
     }
-    
+
     ~SegwayRMPNode() {
         this->disconnect();
     }
