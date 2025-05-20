@@ -1,6 +1,6 @@
 # ros2_driver_segway_rmp based libsegwayrmp, the official library
 This package is derived from <code>segway_rmp</code> (https://github.com/utexas-bwi/segway_rmp.git)
-- If not define then run <code>export ROS_WS= your full path of ros working space</code>
+- If not define then run <code>export ROS_WS= your full path of the ros working space</code>
 
 
 ## Dependencies
