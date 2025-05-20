@@ -1,25 +1,29 @@
 # Segway-ROS2-driver-libsegwayrmp-based
-ROS2 Segway Drivers for BWIBots V2. This package is derived from <code>segway_rmp</code> (https://github.com/utexas-bwi/segway_rmp.git)
-- Also run <code>export ROS_WS= your full path of ros working space</code>
+This package is derived from <code>segway_rmp</code> (https://github.com/utexas-bwi/segway_rmp.git)
+- If not define then run <code>export ROS_WS= your full path of ros working space</code>
 
 
 ## Dependencies
 ### serial
-- Put the serial folder from the following repo in parallel to your colcon workspace
--  <code>cd ${ROS_WS}/src</code>
+- Keep parallel in your workspace's src folder
+- <code>cd ${ROS_WS}/src</code>
 - <code>git clone https://github.com/mohsenrahmanikivi/serial_for_ros2.git</code>
-- ****Enter to the folder, then follow the instructions to build the serial library****.
+- NEED BUILDING BEFORE PROCEED *Enter the folder, then follow the instructions to build the serial library*.
+
+  
 ### libsegwayrmp-ros2
+- Keep this repository parallel in your workspace's src folder
 - <code>cd ${ROS_WS}/src</code>
 - <code>git clone https://github.com/mohsenrahmanikivi/libsegwayrmp_ros2.git</code>
 - use <code>libsegwayrmp</code> as a main package of ros2 humble and not <code>libsegwayrmp_ros2</code>
 
 ### segway_rmp_ros2
+- Keep this repository parallel in your workspace's src folder
 - <code>cd ${ROS_WS}/src</code>
 - <code>git clone https://github.com/mohsenrahmanikivi/segway_rmp_ros2.git </code>
 
 
-### build
+## Final build
 - <code>cd ${ROS_WS} && colcon build</code>
 - in case of " internal compiler error: Segmentation fault 477 | enable current_exception( T const & x )"
 <code> How I resolved my g++ segmentation fault issue
