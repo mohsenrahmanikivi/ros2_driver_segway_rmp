@@ -31,6 +31,7 @@ sudo apt-get install gcc-snapshot -y
   reference https://stackoverflow.com/questions/44286265/g-internal-compiler-error-segmentation-fault-program-cc1plus-where-do-i
 
 ## Launch
+-<code> source ${ROS_WS}/install/setup.bash
 - <code>ros2 launch segway_rmp_ros2 segway_rmp_ros2.launch.py</code>
   
 ## Test
