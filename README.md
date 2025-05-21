@@ -53,6 +53,8 @@ Users need to connect the serial communication cable to actively achieve hardwar
 
 
 ### 2. Run
+
+- if using isaac docker run the ros2 container with <code> cd $ISAAC_ROS_WS && ./src/isaac_ros_common/scripts/run_dev.sh</code>
 - <code>source ${ROS_WS}/install/setup.bash</code>
 - <code>ros2 launch segway_rmp_ros2 segway_rmp_ros2.launch.py</code>
   
