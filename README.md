@@ -74,5 +74,6 @@ ref: https://github.com/SegwayRoboticsSamples/RMP220-SDK/wiki/HardWare_Connectio
 - <code>ros2 launch segway_rmp_ros2 segway_rmp_ros2.launch.py</code>
   
 ## Test
+- if not installed, <code> sudo apt update && sudo apt install ros-${ROS_DISTRO}-teleop-twist-keyboard </code>
 - <code>ros2 run teleop_twist_keyboard teleop_twist_keyboard</code>
 - You should be able to operate the segway with teleop commands now
