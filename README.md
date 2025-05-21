@@ -24,6 +24,9 @@ This package is derived from <code>segway_rmp</code> (https://github.com/utexas-
 
 
 ## Final build
+- If using isaac docker run the ros2 container with
+    -  <code> cd $ISAAC_ROS_WS && ./src/isaac_ros_common/scripts/run_dev.sh</code>
+    -  <code> export ROS_WS=$ISAAC_ROS_WS </code>
 - <code>cd ${ROS_WS} && colcon build</code>
 - in case of " internal compiler error: Segmentation fault 477 | enable current_exception( T const & x )"
 <code> How I resolved my g++ segmentation fault issue
