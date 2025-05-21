@@ -73,7 +73,7 @@ ref: https://github.com/SegwayRoboticsSamples/RMP220-SDK/wiki/HardWare_Connectio
 - <code>source ${ROS_WS}/install/setup.bash</code>
 - <code>ros2 launch segway_rmp_ros2 segway_rmp_ros2.launch.py</code>
 
-### Serial port connecting error
+### If receving serial port connecting error
 Give permission <code>sudo chmod 666 /dev/ttyUSB0</code>
 
   
