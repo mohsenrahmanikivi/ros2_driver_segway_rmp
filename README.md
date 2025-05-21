@@ -35,6 +35,24 @@ sudo apt-get install gcc-snapshot -y
   reference https://stackoverflow.com/questions/44286265/g-internal-compiler-error-segmentation-fault-program-cc1plus-where-do-i
 
 ## Launch
+
+### 1. Verify the serial communication channel
+#### PINs Connection
+Users need to connect the serial communication cable to actively achieve hardware communication. Specifically,
+1. Connect the TX (PIN3) of the 8PIN port and the RX of the serial port module.
+2. Connect the RX (PIN4) of the 8PIN port and the TX of the serial port module.
+3. Connect the GND (PIN5) of the 8PIN port and the GND of the serial port module.
+#### Verify
+1. Check whether it is recognised or not
+- <code> sudo dmesg | grep tty </code> The response should be something like <code> usb 1-2.4: cp210x converter now attached to ttyUSB0 </code>
+- <code>  lsusb </code>  The response should be something like <code> Bus 001 Device 006: ID 10c4:ea60 Silicon Labs CP210x UART Bridge </code>
+2. Set the baud rate (921600) using the stty command (Replace /dev/ttyUSB0 with your actual device path.)
+- <code> sudo stty -F /dev/ttyUSB0 921600 </code>
+3. Run the cat command to read from the serial port:
+-  <code> sudo cat /dev/ttyUSB0 </code> This will start showing the data being received from the connected hardware. If the serial communication is working, you'll see continuous data output.
+
+
+### 2. Run
 - <code>source ${ROS_WS}/install/setup.bash</code>
 - <code>ros2 launch segway_rmp_ros2 segway_rmp_ros2.launch.py</code>
   
