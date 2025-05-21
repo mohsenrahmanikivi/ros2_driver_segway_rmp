@@ -43,15 +43,15 @@ Users need to connect the serial communication cable to actively achieve hardwar
 2. Connect the RX (PIN4) of the 8PIN port and the TX of the serial port module.
 3. Connect the GND (PIN5) of the 8PIN port and the GND of the serial port module.
 
-**8PIN pinout**
-1 CAN CANH AWG26 Red
-2 CAN CANL AWG26 Gray
-**3 Serial Port TX AWG26 Blue
-4 Serial Port RX AWG26 Green
-5 Serial Port GND AWG26 White**
-6 RC-R 5V AWG26 Remote Brown
-7 RC-R GND AWG26 Black
-8 RC-R S.B PPM AWG26 Yellow
+#### 8PIN pinout
+1. CAN, CANH AWG26, Red
+2. CAN, CANL AWG26, Gray
+3. Serial Port, TX AWG26, Blue
+4. Serial Port, RX AWG26, Green
+5. Serial Port, GND AWG26, White
+6. RC-R, 5V AWG26 Remote, Brown
+7. RC-R, GND AWG26, Black
+8. RC-R, S.B PPM AWG26, Yellow
 
 ref: https://github.com/SegwayRoboticsSamples/RMP220-SDK/wiki/HardWare_Connection
 
