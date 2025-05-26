@@ -19,9 +19,9 @@ This package is derived from <code>segway_rmp</code> (https://github.com/utexas-
 - <code>git clone https://github.com/mohsenrahmanikivi/segway_rmp_ros2.git </code>
 
 ### At the end, this should be the folder structure
-${ROS_WS}/serial
-${ROS_WS}/src/libsegwayrmp
-${ROS_WS}/src/segway_rmp_ros2
+- ${ROS_WS}/serial
+- ${ROS_WS}/src/libsegwayrmp
+- ${ROS_WS}/src/segway_rmp_ros2
 
 ## Final build
 - If using isaac, docker run the ros2 container with
